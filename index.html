@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link rel="stylesheet" href="css/index.css" />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap");
+        </style>
+        <title>Maicol Moreno - Portafolio</title>
+    </head>
+    <body>
+        <div id="panelControl">
+            <p id="nombre" onclick="sobreMi(); return false;">
+                Maicol Moreno
+            </p>
+
+            <div id="menuPaginas">
+                <!--IMAGEN Y RUTA DE "SOBRE MI"-->
+                <svg
+                    id="SVGsobreMi"
+                    onclick="sobreMi(); return false;"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32%"
+                    height="auto"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-user-code"
+                >
+                    <path
+                        stroke="none"
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                    />
+                    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                    <path d="M6 21v-2a4 4 0 0 1 4 -4h3.5" />
+                    <path d="M20 21l2 -2l-2 -2" />
+                    <path d="M17 17l-2 2l2 2" />
+                </svg>
+
+                <!--IMAGEN Y RUTA DE "habilidades"-->
+                <svg
+                    id="SVGhabilidades"
+                    onclick="habilidades(); return false;"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32%"
+                    height="auto"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-carambola"
+                >
+                    <path
+                        stroke="none"
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                    />
+                    <path
+                        d="M17.286 21.09q -1.69 .001 -5.288 -2.615q -3.596 2.617 -5.288 2.616q -2.726 0 -.495 -6.8q -9.389 -6.775 2.135 -6.775h.076q 1.785 -5.516 3.574 -5.516q 1.785 0 3.574 5.516h.076q 11.525 0 2.133 6.774q 2.23 6.802 -.497 6.8"
+                    />
+                </svg>
+
+                <!--IMAGEN Y RUTA DE "CONOCIMIENTOS"-->
+                <svg
+                    id="SVGconocimientos"
+                    onclick="conocimientos(); return false;"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32%"
+                    height="auto"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-brain"
+                >
+                    <path
+                        stroke="none"
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                    />
+                    <path
+                        d="M15.5 13a3.5 3.5 0 0 0 -3.5 3.5v1a3.5 3.5 0 0 0 7 0v-1.8"
+                    />
+                    <path
+                        d="M8.5 13a3.5 3.5 0 0 1 3.5 3.5v1a3.5 3.5 0 0 1 -7 0v-1.8"
+                    />
+                    <path d="M17.5 16a3.5 3.5 0 0 0 0 -7h-.5" />
+                    <path d="M19 9.3v-2.8a3.5 3.5 0 0 0 -7 0" />
+                    <path d="M6.5 16a3.5 3.5 0 0 1 0 -7h.5" />
+                    <path d="M5 9.3v-2.8a3.5 3.5 0 0 1 7 0v10" />
+                </svg>
+
+                <!--IMAGEN Y RUTA DE "PROYECTOS"-->
+                <svg
+                    id="SVGproyectos"
+                    onclick="proyectos(); return false"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32%"
+                    height="auto"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-code"
+                >
+                    <path
+                        stroke="none"
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                    />
+                    <path d="M7 8l-4 4l4 4" />
+                    <path d="M17 8l4 4l-4 4" />
+                    <path d="M14 4l-4 16" />
+                </svg>
+
+                <!--IMAGEN Y RUTA DE "CONTACTO"-->
+                <svg
+                    id="SVGcontacto"
+                    onclick="contacto(); return false;"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32%"
+                    height="auto"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-mail"
+                >
+                    <path
+                        stroke="none"
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                    />
+                    <path
+                        d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
+                    />
+                    <path d="M3 7l9 6l9 -6" />
+                </svg>
+            </div>
+
+            <!--CONTENEDOR DE ENLACES DE LAS REDES SOCIALES-->
+            <div id="redesSociales">
+                <a href="https://github.com/MaiiCol07" target="_blank"
+                    ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32%"
+                        height="auto"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"
+                    >
+                        <path
+                            stroke="none"
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                        />
+                        <path
+                            d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+                        /></svg
+                ></a>
+                <a
+                    href="https://web.facebook.com/profile.php?id=61559831353485"
+                    target="_blank"
+                    ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32%"
+                        height="auto"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook"
+                    >
+                        <path
+                            stroke="none"
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                        />
+                        <path
+                            d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                        /></svg
+                ></a>
+                <a
+                    href="https://www.linkedin.com/in/maicol-moreno-090b0630b/"
+                    target="_blank"
+                    ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32%"
+                        height="auto"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="#000000"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"
+                    >
+                        <path
+                            stroke="none"
+                            d="M0 0h24v24H0z"
+                            fill="none"
+                        />
+                        <path
+                            d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+                        />
+                        <path d="M8 11l0 5" />
+                        <path d="M8 8l0 .01" />
+                        <path d="M12 16l0 -5" />
+                        <path d="M16 16v-3a2 2 0 0 0 -4 0" /></svg
+                ></a>
+            </div>
+            <div id="listaIdiomas">
+                <a href="index.html">ES</a>
+                <a href="index_en.html">EN</a>
+            </div>
+        </div>
+
+        <div id="contInformacion">
+            <div id="sobreMi" style="display: block">
+                <div id="sobreMi_part1">
+                    <h1>
+                        ¡Hi,<br />
+                        Welcome!<br />
+                        I'm Maicol Moreno, <br />
+                        This is my portfolio
+                    </h1>
+                    <img
+                        src="img/image.png"
+                        alt="Imagen de presentacion"
+                        title="Maicol Moreno"
+                    />
+                </div>
+                <div id="quienSoy">
+                    <p>
+                        ¿Qué tal? Me presento, soy
+                        <strong>Maicol Moreno</strong>.<br /><br />
+                        Soy <strong>estudiante</strong> de Media
+                        Técnica del curso Técnico laboral asistente de
+                        soporte, mantenimiento y visualización de
+                        bases de datos en el Instituto Tecnológico
+                        Metropolitano de Medellín y estudiante del
+                        grado 11° en la I.E. La Independencia. <br />
+                        Además de mis estudios, trabajo constantemente
+                        en proyectos personales, ya que estos me
+                        permiten poner en práctica mis conocimientos
+                        en
+                        <strong
+                            >HTML, CSS, JavaScript, Python, Flask,
+                            MySQL y phpMyAdmin</strong
+                        >. Ha sido una experiencia única (no cualquier
+                        cosa me genera tremendos dolores de
+                        cabeza).<br /><br />
+                        Me considero una persona
+                        <strong>apasionada</strong> por todo lo
+                        relacionado con el desarrollo web y las
+                        tecnologías, tanto modernas como antiguas. Los
+                        retos son mi motivación constante y superarlos
+                        es aún más gratificante. Y nunca me falta un
+                        buen cafecito.<br /><br />
+                        Fuera del ámbito académico, soy un gran amante
+                        del fútbol. Creo que esta disciplina me ha
+                        enseñado mucho sobre trabajo en equipo,
+                        estrategia y resolución de problemas.<br />
+                        Estoy siempre dispuesto a enfrentar nuevos
+                        desafíos y a seguir creciendo tanto personal
+                        como profesionalmente. ¡Gracias por visitar mi
+                        portafolio!
+                    </p>
+                </div>
+                <button type="button" onclick="contacto()">
+                    <strong>Contáctame</strong><br /><small
+                        >FREE</small
+                    >
+                </button>
+            </div>
+            <div id="habilidades" style="display: none">
+                <h3>habilidades</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Donec efficitur dapibus arcu, sed efficitur
+                    lectus. Donec euismod, lacus sit amet efficitur
+                    efficitur, orci nisi efficitur lectus, non
+                    efficitur nisi nisl eu lectus. Donec
+                </p>
+            </div>
+
+            <div id="conocimientos" style="display: none">
+                <h3>Conocimientos</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Donec efficitur dapibus arcu, sed efficitur
+                    lectus. Donec euismod, lacus sit amet efficitur
+                    efficitur, orci nisi efficitur lectus, non
+                    efficitur nisi nisl eu lectus. Donec
+                </p>
+            </div>
+
+            <div id="proyectos" style="display: none">
+                <h3>Proyectos</h3>
+                <ul>
+                    <li>
+                        <a href="proyecto2.html" target="_blank"
+                            >Proyecto 1</a
+                        >
+                    </li>
+                    <li>
+                        <a href="proyecto1.html" target="_blank"
+                            >Proyecto 2</a
+                        >
+                    </li>
+                    <li>
+                        <a href="proyecto3.html" target="_blank"
+                            >Proyecto 3</a
+                        >
+                    </li>
+                    <li>
+                        <a href="proyecto4.html" target="_blank"
+                            >Proyecto 4</a
+                        >
+                    </li>
+                    <li>
+                        <a href="proyecto5.html" target="_blank"
+                            >Proyecto 5</a
+                        >
+                    </li>
+                </ul>
+            </div>
+            <div id="contacto" style="display: none">
+                <h3>Contacto</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Donec efficitur dapibus arcu, sed efficitur
+                    lectus. Donec euismod, lacus sit amet efficitur
+                    efficitur, orci nisi efficitur lectus, non
+                    efficitur nisi nisl eu lectus. Donec
+                </p>
+            </div>
+        </div>
+        <!--
+            <footer>
+                <p>Copyright &copy; 2023 - 2024</p>
+                <p>Todos los derechos reservados</p>
+                <p>
+                    Desarrollado por
+                    <a
+                        href="https://www.linkedin.com/in/maicol-moreno-100500190/"
+                        >Maicol Moreno</a
+                    >
+                </p>
+            </footer>
+        -->
+        <script src="js/index.js"></script>
+    </body>
+</html>
