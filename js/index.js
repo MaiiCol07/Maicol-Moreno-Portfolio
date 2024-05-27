@@ -1,6 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log("DOM Funcionando Correctamente")
 })
+
+if (document.getElementById("sobreMi").style.display === "block") {
+    document.getElementById("SVGsobreMi").style.stroke = "beige"
+} else {
+    document.getElementById("SVGsobreMi").style.stroke = "#000000"
+}
+
 function cambioStroke(){
     if(document.getElementById("sobreMi").style.display === "block"){
         document.getElementById("SVGsobreMi").style.stroke = "beige"
