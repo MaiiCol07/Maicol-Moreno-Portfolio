@@ -10,6 +10,9 @@
         <style>
             @import url("https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap");
         </style>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Borel&display=swap");
+        </style>
         <title>Maicol Moreno - Portafolio</title>
     </head>
     <body>
@@ -28,7 +31,7 @@
                     height="auto"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke="#000000"
+                    stroke="beige"
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -45,10 +48,10 @@
                     <path d="M17 17l-2 2l2 2" />
                 </svg>
 
-                <!--IMAGEN Y RUTA DE "habilidades"-->
+                <!--IMAGEN Y RUTA DE "cualidades"-->
                 <svg
-                    id="SVGhabilidades"
-                    onclick="habilidades(); return false;"
+                    id="SVGcualidades"
+                    onclick="cualidades(); return false;"
                     xmlns="http://www.w3.org/2000/svg"
                     width="32%"
                     height="auto"
@@ -238,7 +241,7 @@
         </div>
 
         <div id="contInformacion">
-            <div id="sobreMi" style="display: block">
+            <div id="sobreMi" style="display: none">
                 <div id="sobreMi_part1">
                     <h1>
                         ¡Hi,<br />
@@ -247,7 +250,7 @@
                         This is my portfolio
                     </h1>
                     <img
-                        src="img/image.png"
+                        src="img/yoImage.png"
                         alt="Imagen de presentacion"
                         title="Maicol Moreno"
                     />
@@ -256,31 +259,40 @@
                     <p>
                         ¿Qué tal? Me presento, soy
                         <strong>Maicol Moreno</strong>.<br /><br />
-                        Soy <strong>estudiante</strong> de Media
-                        Técnica del curso Técnico laboral asistente de
-                        soporte, mantenimiento y visualización de
+                        Soy 
+                        <strong>estudiante</strong> 
+                        de MediaTécnica del curso Técnico laboral asistente 
+                        de soporte, mantenimiento y visualización de
                         bases de datos en el Instituto Tecnológico
                         Metropolitano de Medellín y estudiante del
                         grado 11° en la I.E. La Independencia. <br />
                         Además de mis estudios, trabajo constantemente
                         en proyectos personales, ya que estos me
-                        permiten poner en práctica mis conocimientos
-                        en
-                        <strong
-                            >HTML, CSS, JavaScript, Python, Flask,
-                            MySQL y phpMyAdmin</strong
-                        >. Ha sido una experiencia única (no cualquier
+                        permiten poner en práctica mis conocimientos en
+                        <strong>
+                            HTML, CSS, JavaScript, Python, Flask,
+                            MySQL y phpMyAdmin
+                        </strong>. 
+                        Ha sido una experiencia única (no cualquier
                         cosa me genera tremendos dolores de
                         cabeza).<br /><br />
                         Me considero una persona
-                        <strong>apasionada</strong> por todo lo
-                        relacionado con el desarrollo web y las
+                        <strong>
+                            apasionada
+                        </strong> 
+                        por todo lo relacionado con el desarrollo web y las
                         tecnologías, tanto modernas como antiguas. Los
                         retos son mi motivación constante y superarlos
-                        es aún más gratificante. Y nunca me falta un
-                        buen cafecito.<br /><br />
-                        Fuera del ámbito académico, soy un gran amante
-                        del fútbol. Creo que esta disciplina me ha
+                        es aún más gratificante. 
+                        <strong>
+                            Y nunca me falta un buen cafecito.
+                        </strong>
+                        <br /><br />
+                        Fuera del ámbito académico, soy un gran 
+                        <strong>
+                            amante del fútbol
+                        </strong>. 
+                        Creo que esta disciplina me ha
                         enseñado mucho sobre trabajo en equipo,
                         estrategia y resolución de problemas.<br />
                         Estoy siempre dispuesto a enfrentar nuevos
@@ -290,20 +302,78 @@
                     </p>
                 </div>
                 <button type="button" onclick="contacto()">
-                    <strong>Contáctame</strong><br /><small
-                        >FREE</small
-                    >
+                    Contáctame 
+                    FREE
                 </button>
             </div>
-            <div id="habilidades" style="display: none">
-                <h3>habilidades</h3>
+            <div id="cualidades" style="display: block">
+                <h2>Mis Cualidades</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Donec efficitur dapibus arcu, sed efficitur
-                    lectus. Donec euismod, lacus sit amet efficitur
-                    efficitur, orci nisi efficitur lectus, non
-                    efficitur nisi nisl eu lectus. Donec
+                    Mi formación académica y mi experiencia como
+                    Técnico Laboral Asistente de Soporte,
+                    Mantenimiento y Visualización de Bases de Datos
+                    (gracias en gran parte a mis excelentes docentes)
+                    me han ayudado a desarrollar cualidades esenciales
+                    tanto a nivel personal como en el campo del
+                    desarrollo web. Soy una persona comprometida y
+                    apasionada, siempre dispuesto a trabajar en equipo
+                    y a comunicarme de manera constante para lograr
+                    los objetivos. Me esfuerzo continuamente por
+                    aprender y adaptarme a nuevos entornos,
+                    tecnologías y metodologías.
+                    <br /><br />
+                    Mi creatividad me permite encontrar soluciones a
+                    problemas de manera más fácil y diseñar interfaces
+                    que sean tanto funcionales como visualmente
+                    atractivas (o eso intento). Además, mi capacidad
+                    de organización intenta que todos mis proyectos se
+                    gestionen de manera eficiente y ordenada. Estoy
+                    motivado para enfrentar desafíos y seguir
+                    creciendo tanto personal como profesionalmente. ¡Y
+                    nunca me falta un buen cafecito para mantenerme al
+                    100!
                 </p>
+                <div id="cualidadesFocus">
+                    <div class="cualidad">
+                        <h4>Trabajo en Equipo</h4>
+                        <img
+                            src="img/trabajo en equipo.png"
+                            alt="Trabajo en Equipo"
+                        />
+                    </div>
+                    <div class="cualidad">
+                        <h4>Creatividad</h4>
+                        <img
+                            src="img/creatividad.png"
+                            alt="Creatividad"
+                        />
+                    </div>
+                    <div class="cualidad">
+                        <h4>Comunicación</h4>
+                        <img
+                            src="img/comunicacion.png"
+                            alt="Comunicación"
+                        />
+                    </div>
+                    <div class="cualidad">
+                        <h4>Aprendizaje constante</h4>
+                        <img
+                            src="img/aprendizaje constante.png"
+                            alt="Aprendizaje constante"
+                        />
+                    </div>
+                    <div class="cualidad">
+                        <h4>Organización</h4>
+                        <img
+                            src="img/organizacion.png"
+                            alt="Organización"
+                        />
+                    </div>
+                    <div class="cualidad">
+                        <h4>Esfuerzo</h4>
+                        <img src="img/esfuerzo.png" alt="Esfuerzo" />
+                    </div>
+                </div>
             </div>
 
             <div id="conocimientos" style="display: none">
